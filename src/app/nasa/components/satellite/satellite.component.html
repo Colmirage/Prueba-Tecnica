@@ -1,0 +1,14 @@
+<div class="container">
+
+    <!-- Mostrar la imagen si imageUrl no es null -->
+    <div *ngIf="satImg">
+      
+      <img [src]="satImg" alt="Imagen desde Satélite" class="responsive-img" />
+    </div>
+    
+    <!-- Mensaje para cuando la imagen esté cargando o no disponible -->
+    <div *ngIf="!satImg">
+      <p>Imagen aún no disponible</p>
+    </div>
+  </div>
+  
